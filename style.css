@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(bg1.jpg) ;
+    background-repeat: no-re
+    peat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color:rgb(0,0,0,0.5);
+    color: white;
+
+}
+
+.logo img {
+  height:70px;
+  width: 70px;
+  border-radius: 100%;
+  margin:5px;
+  margin-left:10px;
+  float: left;
+}
+
+nav .menu a{
+   
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:hover{
+    color:#00b894;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    float:left;
+    width:120px ;
+    line-height: 70px;
+    list-style: none;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+nav label, nav input {
+    display: none;
+}
+
+section h3{
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btn1{
+    /*background:#00b894;*/
+    background: #fff;
+    color: #000;
+}
+
+section .btn1:hover{
+    background: #00b894;
+    color: white;
+}
+
+section .btn2{
+    background: #00b894;
+    color: white;
+}
+
+section .btn2:hover{
+    background: #fff;
+    color: #000;
+}
+
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+
+@keyframes changetext{
+    0%{content:"Mumbai";  }
+    20%{content:"Delhi"; }
+    35%{content:"Kerala";  }
+    60%{content:"Jaipur";  }
+    80%{content:"Kashmir"; }
+    100%{content:"Bali"; }
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .row img{
+    width: 400px;
+    border:2px solid #ff3d0036;border-radius:13px;
+    box-shadow:4px 7px 0px #00000042;cursor:pointer; 
+    margin:10px; 
+    transition:400ms; 
+}
+
+
+.row img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+
+/*about.css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&family=Satisfy&family=Xanh+Mono&display=swap');
+
+.section1{
+    width:100%;
+    min-height: 80vh;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float:left;
+    width:55%
+}
+
+.img-section{
+    float:right;
+    width: 38%;
+    height: 300p;
+    margin-right: 20px;
+}
+
+.img-section img{
+    width:100%;
+    height: auto;
+} 
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.btn {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn button{
+    padding:10px 50px;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    background-color: #e8e4e4;
+    font-family: arial;
+    font-weight: bolder;
+    border: 0px;
+}
+.btn button:hover{
+    background-color: #00b894;
+    color: #f4f1f1;
+}
+
+.content-section .social{
+    margin: 40px 30px;
+}
+
+.content-section .social i{
+    color: #f9f9f6;
+    font-size: 40px;
+    padding: 0px 8px; 
+}
+
+.content-section .social i:hover{
+    color: #21dff4;
+}
+
+
+/*contact.css*/
+
+.contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    border-radius:8px; 
+    text-align: center;
+    z-index: 50;
+}
+
+.form{
+    border: 1px solid #a9a9a9;
+    margin: 7px 0px;
+    padding: 6px 20px;
+    border-radius:8px ;
+}
+
+.contact-form h1{
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.form label{
+    font-size: 13px;
+    color: #000;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    font-size:19px;
+    margin-top: 5px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button{
+    width: 100%;
+    display: inline-block;
+    background-color: #253c03;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+    cursor: pointer;
+    color:#fff
+}
+.contect{
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display:block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float:none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section{
+        float: none; 
+        width:100%;
+    }
+    .img-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
+
+
+    nav ul li {
+        float:left;
+        width:100% ;
+        line-height: 70px;
+        list-style: none;
+        text-align: center;
+        background-color:rgb(0,0,0,0.5);
+    }
+
+
+    nav ul {
+        float: none;
+        position: fixed;
+        top:-100%;
+        width: 100%;
+        transition: all 1s;
+        z-index: 999;
+    }
+
+
+    .logo img {
+
+        height:50px;
+        width: 50px;
+        border-radius: 100%;
+        margin:15px;
+        float: none;
+      
+      }
+
+    nav label {
+        display: block;
+        float: right;
+        position: absolute;
+        right:0px;
+        top :0px;
+        margin: 20px;
+        font-size: 40px;
+    }
+    
+
+#check:checked~ul{
+top:73px
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .row img{
+    width: 200px;
+    height:200px;
+    border:2px solid #ff3d0036;
+    border-radius:13px;
+    box-shadow:4px 7px 0px #00000042;
+    cursor:pointer; 
+    margin:10px; 
+    transition:400ms; 
+}
+
+  
+}
